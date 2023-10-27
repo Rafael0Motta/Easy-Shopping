@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root { 
+    --first-color: #383857;
+    --seccond-color: #9499EA;
+    --third-color: #5d5d7db9; 
+    --fourth-color: #9498ea75; 
+    --fifth-color: #ffffff;
+    --sixth-color: #9499ea19; 
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.container-right {
+    display: inline-block;
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    background-color: var(--first-color);
+}
+
+header {
+    margin-top: 25px;
+}
+
+a {
+    margin-right: 58px;
+    font-size: 28px;
+    line-height: 41px;
+    color: var(--first-color);
+    text-decoration: none;
+    margin-left: 41px;
+}
+
+img {
+    position: relative;
+    top: 20%;
+    right: 140px;
+}
+
+.container-left {
+    width: 54%;
+    display: inline-block;
+    margin-left: 136px;
+    margin-top: 381px;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    width: 368px;
+    color: var(--first-color);
+}
+
+p {
+    width: 540px;
+    font-size: 28px;
+    margin-top: 20px;
+    line-height: 48px;
+    color: var(--first-color);
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+button {
+    margin-top: 20px;
+    width: 269px;
+    height: 62px;
+    background: var(--seccond-color);
+    box-shadow: 0px 10px 24px var(--sixth-color);
+    border-radius: 40px;
+    border: none;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: var(--first-color);
+}
+
+/* HOVER */
+
+button:hover {
+    background: var(--fourth-color);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--third-color);
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1100px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-left {
+        padding: 25px;
+        margin: 0;
+        height: 50%;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 58px 50px 0 50px;
+        text-align: center;
+        font-size: 36px;
+        line-height: 52px;
+        width: auto;
+    }
+
+    p {
+        margin: 15px 40px ;
+        width: auto;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+
+    .container-right {
+        width: 100%;
+        display: block;
+        padding: 40px;
+        height: auto;
+        position: static;
+        background-color: var(--first-color);
+    }
+
+    img {
+        position: static;
+        width: 90%;
+    }
+
+    header { 
+        display: none;
+    }
+
+}
